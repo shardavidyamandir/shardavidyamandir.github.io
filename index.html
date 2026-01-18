@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sharda Vidya Mandir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* ================= RESET ================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+            background: #f5f7fb;
+            color: #333;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            background: linear-gradient(135deg, #0a3d62, #1e3799);
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 12px 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1e3799;
+            margin: 0 18px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 3px;
+            left: 0;
+            bottom: -6px;
+            background: #1e3799;
+            transition: 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* ================= HERO ================= */
+        .hero {
+            background: linear-gradient(to right, #4a69bd, #6a89cc);
+            color: white;
+            padding: 110px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.6rem;
+        }
+
+        .hero p {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        /* ================= SECTIONS ================= */
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            color: #1e3799;
+        }
+
+        section p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .alt {
+            background: #eef2ff;
+        }
+
+        /* ================= CARDS ================= */
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            width: 260px;
+            padding: 30px;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+        }
+
+        /* ================= BUTTON ================= */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: #1e3799;
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0a3d62;
+            transform: scale(1.05);
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            background: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.95rem;
+            margin-top: 50px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+
+            nav {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>SHARDA VIDYA MANDIR</h1>
+    <p>Education • Discipline • Values</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#classes">Classes</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#fee">Fee</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h2>Welcome to Sharda Vidya Mandir</h2>
+    <p>Providing Quality Education from Pre-Nursery to Class 10</p>
+</div>
+
+<section id="about">
+    <h2>About Our School</h2>
+    <p>
+        <strong>Sharda Vidya Mandir</strong> is a well-established educational institution
+        focused on academic excellence, discipline, and moral values.
+        <br><br>
+        <h1><strong>Principal:</strong> Rajesh Kumar</h1>
+    </p>
+</section>
+
+<section id="classes" class="alt">
+    <h2>Classes Offered</h2>
+    <div class="cards">
+        <div class="card">Pre-Nursery</div>
+        <div class="card">Primary to Middle</div>
+        <div class="card">Class 9 – 10</div>
+    </div>
+</section>
+
+<section id="facilities">
+    <h2>Facilities</h2>
+    <div class="cards">
+        <div class="card">💻 Computer Classes</div>
+    </div>
+</section>
+
+<section id="fee" class="alt">
+    <h2>Fee Structure</h2>
+    <p>
+        The fee structure of the school is decided
+        <strong>according to the class</strong> of the student.
+        <br><br>
+        Parents are requested to contact the school office
+        for detailed fee information.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 <strong>Mobile:</strong> +91 98352 85686</p>
+    <a class="btn" href="https://maps.app.goo.gl/Y3MD9sngB1k7Gi726" target="_blank">
+        📍 View School Location
+    </a>
+</section>
+
+<footer>
+    © MADE BY MUNAF
+</footer>
+
+</body>
+</html>
